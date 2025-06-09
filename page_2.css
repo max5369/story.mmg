@@ -1,0 +1,150 @@
+header h1{
+    text-align: center;
+    background-image: linear-gradient(to left,black,grey);
+    margin:-10px 600px 0 600px ;
+    border-radius: 10px;
+    padding: 3px;
+    color:white;
+    border: 5px solid black;
+}
+
+
+header{
+   background-color: rgba(97, 97, 97, 0.918);
+   position: relative;
+}
+
+
+nav{
+    text-align: center;
+    font-size: 30px;
+    border-top:5px solid black;
+    border-bottom:5px solid black ;
+    padding: 1px;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+}
+
+
+nav a{
+    color: black;
+}
+
+
+
+
+main h1{
+    text-align: center;
+    background-image: linear-gradient(to left,black,grey);
+    margin:0 600px 0 600px ;
+    border-radius: 10px;
+    padding: 3px;
+    position: relative;
+    top:30px;
+    color:white; 
+    font-size: 40px; 
+}
+
+
+body{
+    background: url(https://i.postimg.cc/8P8YW0tx/Leonardo-Phoenix-10-A-dark-mystical-night-sky-filled-with-vibr-3.jpg)no-repeat center center / cover;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+/* Немного уменьшим размеры, чтобы всё влезло */
+main p {
+    background-color: grey;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    width: 220px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+ul {
+    background-color: grey;
+    color: white;
+    font-size: 36px;
+    padding: 10px;
+    width: 220px;
+    border-radius: 15px;
+    list-style: none;
+}
+
+.product img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.product_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+
+
+.product_3 img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    margin: 0 20px;
+    font-size: 24px;
+  }
+
+  main h1 {
+    margin: 20px;
+    font-size: 28px;
+  }
+
+  nav {
+    flex-direction: column;
+    font-size: 22px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .product, .product_2 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  main p, ul {
+    font-size: 22px;
+    width: 90%;
+  }
+
+  .product img,
+  .product_2 img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+}
